@@ -78,7 +78,8 @@ Deep Learning is a subset of Machine Learning, since it uses complex techniques,
 ## Data Governance
 Data Governance Programs refers to when a business maintains and pursues a high level of quality regarding their data, along with the ability for the business control said data.
 
-
+## Analytics Tools
+Analytics Tools primarily focus on assisting and automating various tasks of a Data Analyst to reduce ambigous data, promote more efficient and healthy workflows, etc. Some of these tools includes Spreadsheet Tools like Microsoft Excel, Google Sheets, RStudio which makes use of the R Programming Language, etc.
 
 
 
