@@ -1,5 +1,5 @@
-# Data Analytics
-## Chapter 4: Data Quality
+# Data Analytics and Reporting
+## Chapter 6: Data Analytics Tools
 ### Subheading 1
 Content
 
@@ -10,6 +10,10 @@ Content
 Content
 
 
+# Data Analytics
+## Chapter 5: Data Visualization with Reports and Dashboards
+### Subheading 1
+Content
 
 ### Subheading 2
 Content
