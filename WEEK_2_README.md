@@ -10,8 +10,7 @@ Content
 Content
 
 
-# Data Analytics
-## Chapter 5: Data Visualization with Reports and Dashboards
+## Chapter 7: Data Visualization with Reports and Dashboards
 ### Subheading 1
 Content
 
@@ -20,3 +19,25 @@ Content
 
 ### Subheading 3
 Content
+
+
+# Data Governance
+## Chapter 8: Definition of Data Governance
+### Subheading 1
+Content
+
+### Subheading 2
+Content
+
+### Subheading 3
+Content
+
+
+
+## Sumamry: Definition of Data Governance
+### Subheading 1
+Content
+
+## Exam Prep
+
+## Review Questions
