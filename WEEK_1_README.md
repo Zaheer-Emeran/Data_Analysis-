@@ -19,11 +19,20 @@ Key Responsibilities:
 - - This refers to data which has been retrieved through various means, like databases, external sources, etc, along with the various steps to clean the data to ensure accuracy, non-ambigous data, etc.
 
 - Data Analysis:
-- Data Visualization and Storytelling:
-- Decision Support:
-- Collabortation and Comms
-- Continous Learning Adaptation
+- - This refers to the various methods and tools used in order to interpret data, such as machine learning, statistical methods, etc, which would allow the user to identify patterns and trends within the data.
 
+- Data Visualization and Storytelling:
+- - This refers to using a platform to visually display data through means of, for instance, graphcs, charts, etc, which allows for ease of explanation and articulation of the data to stakeholders.
+
+- Decision Support:
+- - This refers to providing educated recommendations for various business decisions, predicting future trends, potential implications of business decisions, etc, based on both prior experience, along with the gathered findings from analysing the data
+
+- Collabortation and Comms
+- - This refers to the Data Analyst working with the various departments within a business, such as Marketing, Finance, etc, to gain further insights into their data, along with being able to properly articulate the data to the non-technical stakeholders.
+
+- Continous Learning Adaptation
+- - This refers to continously monitoring various trends, tools and technologies to identify more efficient and effective ways in ordr to analyse data for the business.
+  
 ### Subheading 3
 Content
 
