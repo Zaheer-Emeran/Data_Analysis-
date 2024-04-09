@@ -1,3 +1,15 @@
+# Occupations in Data Analysis
+- Data analysts and scientists,
+- AI and machine learning (ML) specialists,
+- Big Data specialists,
+- Digital marketing and strategy specialists,
+- Process automation specialists,
+- Business development professionals,
+- Digital transformation specialists,
+- Information security analyst,
+- Software and applications developers,	
+- Internet of Things (IoT) specialists,
+
 # Basics of Data
 ## Chapter 1: Data Analyst
 ### Module Focus
@@ -32,9 +44,42 @@ Key Responsibilities:
 
 - Continous Learning Adaptation
 - - This refers to continously monitoring various trends, tools and technologies to identify more efficient and effective ways in ordr to analyse data for the business.
-  
-### Subheading 3
-Content
+
+#### Youtube Link: https://youtu.be/yZvFH7B6gKI
+
+### Analytics Proccess
+While a Data Analyst would generally sequentially follow the Analytics Process, which refers to the Data Analyst:
+- Obtaining Data,
+- Clenaing and Manipulating the Data,
+- Analyising the Data,
+- Creating Visual Represenations of said data, and
+- Reporting and Communicating the results of the data,
+The process is more iterative, since it can be frequently revisited whilst the tean is working with a Data Set.
+
+### Analytics Techniques
+The three types of Analytics Includes:
+- Descriptive Analytics
+- Predictive Analytics
+- Prescriptive Analytics
+
+# Note ---> Do more research on these 3 topics
+
+### Machine Learning, AI and Deep Learning
+#### AI
+AI Includes any type of technique where an individual attempts to get a Computer System to imitate Human Behavior, thus meaning that it is possible to prompt the computer to imitate the intelligence of a human which would allow it to output a particular result, however currently it is unable to function at the level of complex reasoning which a normal human mind contains.
+
+#### Machine Learning
+Machine learning makes use of Algorithms in order to analyse datasets in order to help you make informed business decisions about the future, such as Recommending the next movie that a customer might wish to watch based on their past activity and the preferences of similar customers. It is a subset of AI
+
+#### Deep Learning
+Deep Learning is a subset of Machine Learning, since it uses complex techniques, which is called Neural Networks, in order to discover and find data in a particular way. It is more used for image, video and sound analyis.
+
+
+## Data Governance
+Data Governance Programs refers to when a business maintains and pursues a high level of quality regarding their data, along with the ability for the business control said data.
+
+
+
 
 
 ## Chapter 2: Understanding Data
