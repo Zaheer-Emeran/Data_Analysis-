@@ -1,4 +1,4 @@
-<code style="color : name_color">text</code>
+<code style="color : aqua">text</code>
 
 # Basics of Data
 ## Chapter 1: Data Analyst
