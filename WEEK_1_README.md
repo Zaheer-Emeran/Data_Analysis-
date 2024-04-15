@@ -217,6 +217,13 @@ A wide variety of technologies has emerged to facilitate the storage of unstruct
 
 
 ## Chapter 3: Databases and Data Acquisition
+Chapter Outcome:
+- Data Concepts and Environments
+- Identify basic concepts of data schemas and dimensions
+- Understanding the domain of Data Mining
+- Explain data acquisition concepts
+- Explain common techniques for data manipulation and query optimization
+
 ### Subheading 1
 Content
 
