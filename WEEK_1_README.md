@@ -112,11 +112,49 @@ All of the data types shown in Table 2.2 support alphanumeric data. Where they d
 ### Strong and Weak Typing
 - Data types define values placed in columns. Strong typing is when technology rigidly enforces data types.
 - Weak typing loosely enforces data types. Spreadsheets use weak typing to help make it easier for people to accomplish their work.
-### Subheading 3
-Content
 
-### Subheading 3
-Content
+### Untructured Data Types
+Unstructured data is any type of data that does not fit neatly into the tabular model. 
+Instances:
+- Binary
+> Binary data types are one of the most common data types for storing unstructured data. It supports any type of digital file you may have, from Microsoft Excel spreadsheets to digital photographs.
+
+- Audio
+> The impact of capturing, storing, and analyzing audio data has led to the development of avalanche detection systems. These systems listen for and detect the acoustic characteristics of an avalanche. <br>
+> Audio can be stored in its raw form, which consumes the most storage space. Alternatively, it can be encoded with a compression algorithm to reduce the amount of space required. <br>
+> Regardless of if it is in raw or compressed form, storing audio requires a data type designed to handle raw binary data.
+
+- Images
+>  it is easy for a human to identify the contents of the photograph. However, it is a binary file to a computer, ultimately stored as a series of ones and zeros.
+>  Applying artificial intelligence algorithms for image processing over a set of digital photos allows people to look for the objects they contain.
+
+### Categories of Data
+- Quantitative vs Qualitative
+> Quantitative Data refers to Numerical data, such as Age, Height and Weight
+> Qualitative Data refers to Descriptive Data, such text describing characteristics of a Data Set
+
+- Discrete vs Continuous Data
+> A helpful way to think about discrete data is that it represents measurements that can't be subdivided.
+> You may intuitively think of discrete data as using whole numbers, but that doesn't have to be the case.
+> Can also be thought about when finding things to count.
+> For example, if a fundraising organization sells chickens in half-chicken increments, you can buy 1.5 chickens. However, you can't buy .25 chickens.
+
+> Continuous Data can best be described as data which consistently changes, and also commonly makes use of decimal numbers. For instance, Height, Weightm etc.
+> Qualitative Data Is descrete.
+> Quantitative data can be either Discrete or Continuous.
+
+- Categorical Data
+> Text data with a known, finite number of categories is categorical.
+> When considering an individual data element, it is possible to determine whether or not it is categorical.
+
+- Dimensional Data
+> Dimensional modeling is an approach to arranging data to facilitate analysis.
+> Dimensional modeling organizes data into fact tables and dimension tables.
+> Fact tables store measurement data that is of interest to a business.
+> Dimensional data contains groupings of individual attributes about a given subject.
+
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/a8e76c71-169e-451d-9f66-37363e8c4ea5)
+
 
 ### Subheading 3
 Content
