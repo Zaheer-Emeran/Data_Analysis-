@@ -84,15 +84,42 @@ Analytics Tools primarily focus on assisting and automating various tasks of a D
 
 
 ## Chapter 2: Understanding Data
-### Subheading 1
-Content
+### Exploring Data Types
+- A data element is an **attribute** about a **person**, **place**, or **thing** containing **data** within a **range of values**.
+- Data elements also describe characteristics of activities, including orders, transactions, and events.
+- A data type limits the values a data element can have. This could be, for instance, Pet Name, Animal Type, and Breed Name.
 
-### Subheading 2
+### Tablular Data
+Tabular data is data organized into a table, made up of columns and rows. A table represents information about a single topic. Each column represents a uniquely named field within a table, also called a variable, about a single characteristic. 
+
+### Structured Data Types
+Structured data is tabular in nature and organized into rows and columns. Structured data is what typically comes to mind when looking at a spreadsheet. With clearly defined column headings, spreadsheets are easy to work with and understand. In a spreadsheet, cells are where columns and rows intersect.
+
+Alphanumeric is the most widely used data type for storing character-based data. As the name implies, alphanumeric is appropriate when a data element consists of both numbers and letters. The alphanumeric data type is ideal for storing product stock-keeping units (SKUs).
+
+There are times when it is necessary to impose even stricter limits on character-related data to exclude numbers. Excluding numbers can be achieved using the text data type. Closely related to the alphanumeric data type, it is even more stringent. It is helpful to think of text as a subset of alphanumeric, only allowing the storage of alphabetic characters. It improves the overall data quality.
+
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/e0bdd6ab-c382-4fb3-afdc-bf034b53374b)
+
+All of the data types shown in Table 2.2 support alphanumeric data. Where they differ is in how much data they can handle. Before defining a column as alphanumeric, you need to determine how long your longest-possible text value will be.
+
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/662cb82a-23ae-4e54-a55e-a3a67cd13c54)
+
+- Numeric: Numbers Exclusively
+- Whole Numbers: Integers
+- Rational Numbers: Includes Decimal Points
+
+### Strong and Weak Typing
+- Data types define values placed in columns. Strong typing is when technology rigidly enforces data types.
+- Weak typing loosely enforces data types. Spreadsheets use weak typing to help make it easier for people to accomplish their work.
+### Subheading 3
 Content
 
 ### Subheading 3
 Content
 
+### Subheading 3
+Content
 
 ## Chapter 3: Databases and Data Acquisition
 ### Subheading 1
