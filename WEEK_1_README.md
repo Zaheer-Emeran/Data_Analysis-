@@ -156,8 +156,65 @@ Instances:
 ![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/a8e76c71-169e-451d-9f66-37363e8c4ea5)
 
 
-### Subheading 3
-Content
+### Common Data Structures
+Analysts need to be able to perform their roles as efficiently as possible. It is common to use multiple tools to analyze data. Improved integration and interoperability between tools make it easier for analysts to be productive. As a result, several concepts have become standardized.
+
+#### Structured Data
+Tabular data is structured data, with values stored in a consistent, defined manner, organized into columns and rows. <br>
+However, structured data does not translate directly to data quality. Data Quality refers to Data which is unambigous, properly correct, etc.<br>
+It is a best practice to specify a key that uniquely identifies all values for a given row.
+
+
+#### Semi-Structured Data
+Semi-structured data is data that has structure and that is not tabular. Email is a well-known example of semi-structured data. Every email message has structural components, including recipient, sender, subject, date, and time. However, the body of an email is unstructured text, while attachments could be anything type of file.
+
+#### Unstructured Data
+Unstructured data is qualitative, describing the characteristics of an event or an object. Images, phrases, audio or video recordings, and descriptive text are all examples of unstructured data. There is very little that is common about different kinds of unstructured data.
+
+A Forbes study shows that over 90 percent of businesses need to manage and derive value from unstructured data.
+
+Machine data is a common source of unstructured data. Machine data has various sources, including Internet of Things devices, smartphones, tablets, personal computers, and servers. 
+
+As machines operate, they create digital footprints of their activity. This data is unstructured and can identify machine-to-machine interaction.
+
+A wide variety of technologies has emerged to facilitate the storage of unstructured data. Operationally, these technologies are similar to how a key in a tabular dataset identifies its associated values. With unstructured data, the key is a unique identifier, whereas the value is the unstructured data itself.
+
+
+### Common File Formats
+#### Text Files
+- Consist of plain text and are limited in scope to alphanumeric data.
+- Commonly referred to as a flat file,
+- Is widly adopted since they can be opened without requiring a specific software and can be opened using various Operating Systems.
+- A unique character known as a delimiter facilitates transmitting structured data via a text file.
+- The delimiter is the character that separates individual fields. A delimiter can be any character. This can include characters like commans, tabs, etc.
+- When a file is comma-delimited, it is known as a comma-separated values (CSV) file.
+- Similarly, when a file is tab-delimited, it is called a tab-separated values (TSV) file.
+- CSV can either be structured, semi-structured or unstructured.
+
+
+#### Fixed-Width Files
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/13f183a9-9340-4709-9d5e-05cddefa5e82)
+
+
+#### JavaScript Object Notation (JSON)
+- It is Designed to add structure to a text file without incurring significant overhead.
+- It is Easily readable by people and easily parsed by modern programming languages like Python,R, etc.
+- Think of Dictionaries in Python
+
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/a0599dc9-49ff-40d0-8a73-59ff3913c2c3)
+
+#### Extensible Markup Language (XML)
+- Extensible Markup Language (XML) is a markup language that facilitates structuring data in a text file.
+- Incurs more overhead because it makes extensive use of tags.
+-  Tags describe a data element and enclose each value for each data element. While these tags help readability, they add a significant amount of overhead.
+-  Compared with the JSON in Figure 2.29, XML results in a file roughly double in size.
+-  In small Files its insignificant, but more profound when dealing with Gigabytes and TB.
+
+#### HypterText Markup Language (HTML)
+- HyperText Markup Language (HTML) is a markup language for documents designed to be displayed in a web browser.
+- It is the foundation for how people interact with the World Wide Web.
+
+
 
 ## Chapter 3: Databases and Data Acquisition
 ### Subheading 1
