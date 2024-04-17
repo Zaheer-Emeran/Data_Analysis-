@@ -224,11 +224,63 @@ Chapter Outcome:
 - Explain data acquisition concepts
 - Explain common techniques for data manipulation and query optimization
 
-### Subheading 1
-Content
+### Exploring Databases
+One of the oldest and most mature databases is the relational database. Relational databases excel at storing and processing structured data. 
+The power of the relational model is that it also allows us to describe how entities connect or relate, to each other.
 
-### Subheading 2
-Content
+
+#### ERD Instance
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/fdf388e5-959c-4d46-819c-8f4be38d3db7)
+The entity relationship diagram (ERD) is a visual artifact of the data modeling process. It shows the connection between related entities. 
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/4029d938-7603-47dc-86c2-4fe76120ee64)
+Cardinality refers to the relationship between two entities, showing how many instances of one entity relate to instances in another entity. You specify cardinality in an ERD with various line endings. The first component of the terminator indicates whether the relationship between two entities is optional or required. The second component indicates whether an entity instance in the first table is associated with a single entity instance in the related table or if an association can exist with multiple entity instances. 
+
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/3a02893b-df5b-4709-80f1-1f36fdc2aede)
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/36e18577-0028-439f-8742-9f675314e378)
+A binary relationship connects two entities, as seen in Figure 3.2. A ternary relationship connects three entities. For example, you might use a ticket entity to connect a venue, a performing artist, and a price. <br>
+Database designers would continue to add entities and relationships to the diagram until it meets all of the business needs of a business.<br>
+ERDs are particularly useful when formulating how to retrieve information from the database that is spread across multiple tables because the diagrams allow you to visualize the connections between entities.<br>
+
+### Relational Database
+Relational databases are software, or pieces of software, that let you make an operational system out of an ERD. <br>
+When creating a database table, the ordering of columns does not matter because you can specify the column order when retrieving data from a table.
+<br> When an attribute becomes a column, you assign it a data type.
+<br> Completing all of this work results in a diagram known as a schema.
+<br> You can think of a schema as an ERD with the additional details needed to create a database.
+
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/e95380aa-4301-4829-891e-5ffa3bbd2b44)
+
+An associative table is both a table and a relationship. An associative table lets you identify the relationship between a specific animal and a particular person with a minimum amount of data duplication. 
+
+A primary key is one or more attributes that uniquely identify a specific row in a table. It is best to use a synthetic primary key, which is simply an attribute whose only purpose is to contain unique values for each row in the table. 
+Note that within a given table, the actual sequencing of the rows does not matter.
+
+ A foreign key is one or more columns in one table that points to corresponding columns in a related table. Frequently, a foreign key references another table's primary key.
+
+
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/5e70c11b-de88-4c57-a93b-85a4142e72d4)
+
+Your query needs to perform a database join to retrieve the data to substitute in the email reminder. A join uses data values from one table to retrieve associated data in another table, typically using a foreign key.
+
+#### Platforms / Database Types:
+MySQL, MariaDB, and PostgreSQL. Amazon Web Services (AWS) developed Aurora, PostgreSQL. Aurora 
+
+#### Non-Relational Databases:
+- Key-Value
+A key-value database is one of the simplest ways of storing data. Data is stored as a collection of keys and their corresponding values. A key must be globally unique across the entire database. The use of keys differs from a relational database, where a given key identifies an individual row in a specific table.
+<br> A key can be a sequence of numbers, alphanumeric strings, or some other combination of values.
+<br> It also can scale to accommodate many simultaneous requests without impacting performance. 
+<br> One reason for choosing a key-value database is when you have lots of data and can search by a key's value
+- Document
+  JSON files
+  ![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/9f8731e1-3023-46dd-9346-1fb75171ca00)
+
+
+- Column-Family
+Get brief description and instance of this
+
+- Graph
+Get brief description and instance of this
 
 ### Subheading 3
 Content
