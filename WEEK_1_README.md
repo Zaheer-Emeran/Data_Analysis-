@@ -224,6 +224,8 @@ Chapter Outcome:
 - Explain data acquisition concepts
 - Explain common techniques for data manipulation and query optimization
 
+# Note: Add fact and dimensional tables.
+
 ### Exploring Databases
 One of the oldest and most mature databases is the relational database. Relational databases excel at storing and processing structured data. 
 The power of the relational model is that it also allows us to describe how entities connect or relate, to each other.
@@ -282,8 +284,77 @@ Get brief description and instance of this
 - Graph
 Get brief description and instance of this
 
-### Subheading 3
-Content
+### Databases Use Cases
+#### Online Transactional Processing (OLTP)
+They handle daily online transactions
+<br>While the number of transactions a system handles on a given day can be very high, individual transactions process small amounts of data.
+
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/b86ef78e-2906-4895-927f-5a4cd8ffb2ff)
+
+
+### Normalization
+First normal form (1NF) is when every row in a table is unique and every column contains a unique value.
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/a9965f92-2992-4c1a-a74c-2ed758636c93)
+
+Second normal form (2NF) starts where 1NF leaves off. In addition to each row being unique, 2NF applies an additional rule stating that all nonprimary key values must depend on the entire primary key.
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/dcac0c41-4518-4463-8ab9-e38dd8ef694f)
+
+Third normal form (3NF) builds upon 2NF by adding a rule stating all columns must depend on only the primary key.
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/94532dfa-b776-4362-a936-d99260f0652e)
+
+While OLAP and OLTP databases can both use relational database technology, their structures are fundamentally different. OLTP databases need to balance transactional read and write performance, resulting in a highly normalized design. Typically, OLTP databases are in 3NF.
+
+
+**The greater the number of joins, the more complex the query.**
+**The more complex the query, the longer it takes to retrieve results.**
+
+#### Online Analytical Processing (OLAP)
+OLAP systems focus on the ability of organizations to analyze data.
+
+Instead of having data distributed across multiple tables, denormalization results in wider tables than those found in an OLTP database. It is more efficient for analytical queries to read large amounts of data for a single table instead of incurring the cost of joining multiple tables together.
+
+databases that power OLAP systems have a denormalized design
+
+
+#### Schema Concepts (Large Data Storage Types Zaheer)
+The design of a database schema depends on the purpose it serves. 
+
+Transactional systems require highly normalized databases, whereas a denormalized design is more appropriate for analytical systems.
+Transactional data may come from systems that power the human resources, sales, etc
+
+A data warehouse is a database that aggregates data from many transactional systems for analytical purposes. A data warehouse facilitates analytics across the entire company.
+
+A data mart is a subset of a data warehouse. Data warehouses serve the entire organization, whereas data marts focus on the needs of a particular department within the organization. 
+
+A data lake stores raw data in its native format instead of conforming to a relational database structure. Using a data lake is more complex than a data warehouse or data mart, as it requires additional knowledge about the raw data to make it analytically useful.
+
+For data warehouses and data marts, several design patterns exist for modeling data. It is crucial to realize that the structure of a database schema impacts analytical efficiency, particularly as the volume of data grows. 
+
+. Life-cycle considerations include where data comes from, how frequently it changes, and how long it needs to persist.
+
+(Database, Data Warehouse, Data Lake: https://youtu.be/-bSkREem8dM )
+
+##### Star Schema
+The star schema design to facilitate analytical processing gets its name from what the schema looks like when looking at its entity relationship diagram.  Star schemas are denormalized to improve read performance over large datasets. At the centre of the star is a fact table
+
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/a320c7d3-6061-4545-830c-084773576d51)
+
+##### Snowflakse Schema
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Chapter 4: Data Quality
