@@ -337,9 +337,35 @@ For data warehouses and data marts, several design patterns exist for modeling d
 ##### Star Schema
 The star schema design to facilitate analytical processing gets its name from what the schema looks like when looking at its entity relationship diagram.  Star schemas are denormalized to improve read performance over large datasets. At the centre of the star is a fact table
 
+ the dimension tables connect directly to the fact table.
+
+Data marts frequently use a star-schema approach cause Data marts are comparatively less complicated, because they represent a single data subject area
 ![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/a320c7d3-6061-4545-830c-084773576d51)
 
 ##### Snowflakse Schema
+Another design pattern for data warehousing is the snowflake schema. As its name implies, the schema diagram looks like a snowflake. Snowflake and star schemas are conceptually similar in that they both have a central fact table surrounded by dimensions. Where the approaches differ is in the handling of dimensions. With a snowflake schema, you may need more than one join to get the data you are looking for.
+
+With a snowflake, dimensions have subcategories, which gives the snowflake design its shape. A snowflake schema is less denormalized than the star schema. a snowflake schema requires less storage space than a star schema.
+
+Data warehouses often use snowflake schemas,
+
+### Dimensionality 
+Dimensionality refers to the number of attributes a table has. The greater the number of attributes, the higher the dimensionality. One dimension you will frequently encounter is time. For example, to understand historical profitability, you need to keep track of pricing at the product level over time. One way to accomplish this is to add a start and end date to each product's price.
+
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/18323f2f-372f-4150-ac68-300c00297793)
+
+### Handling Dimensionality
+There are multiple ways to design dimensions, like the start and end date approach. 
+
+Another method extends the snowflake approach to modelling dimensions. You have a product dimension for the current price and a product history table for maintaining price history. One advantage of this approach is that it is easy to retrieve the current price while maintaining access to historical information.
+
+Another approach is to use an indicator flag for the current price. . The indicator flag method keeps all pricing data in a single place. It also simplifies the query structure to get the current price. Instead of doing date math, you look for the price where the Current flag equals “Y.”
+
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/7c97cfec-5ea3-4a99-a87b-f597625bab2d)
+
+
+
+
 
 
 
