@@ -224,7 +224,13 @@ Chapter Outcome:
 - Explain data acquisition concepts
 - Explain common techniques for data manipulation and query optimization
 
-# Note: Add fact and dimensional tables.
+# Note: 
+- Add fact and dimensional tables.
+- Describe the characteristics of OLTP and OLAP systems.
+- Describe approaches for handling dimensionality.
+- Understand integration and how to populate a data warehouse.
+- Differentiate between data collection methods.
+- Describe how to manipulate data and optimize queries. 
 
 ### Exploring Databases
 One of the oldest and most mature databases is the relational database. Relational databases excel at storing and processing structured data. 
@@ -363,24 +369,89 @@ Another approach is to use an indicator flag for the current price. . The indica
 
 ![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/7c97cfec-5ea3-4a99-a87b-f597625bab2d)
 
+### Data Acquisition Concepts
+To perform analytics, you need data. Data can come from internal systems you operate, or you can obtain it from third-party sources.
 
+#### Integration
+Data from transactional systems flow into data warehouses and data marts for analysis.
 
+One approach is known as extract, transform, and load (ETL).
+- Extract: The goal of the extract phase is to move data from a relational database into a flat file as quickly as possible.
+- Transform: goal is to reformat the data from its transactional structure to the data warehouse's analytical design.
+- Load: load phase is to ensure data gets into the analytical system as quickly as possible.
 
+Extract, load, and transform (ELT) is a variant of ETL. With ELT, data is extracted from a source database and loaded directly into the data warehouse. Once the extract and load phases are complete, the transformation phase gets underway. One key difference between ETL and ELT is the technical component performing the transformation. With ETL, the data transformation takes place external to a relational database, using a programming language like Python. ELT uses SQL and the power of a relational database to reformat the data.
 
+ELT has an advantage in the speed with which data moves from the operational to the analytical database. 
 
+#### ETL Vendors
+Whether you choose ETL or ELT for loading your data warehouse, you don't have to write transformations by hand. Many products support both ETL and ELT. 
 
+An initial load occurs the first time data is put into a data warehouse. After that initial load, each additional load is a delta load, also known as an incremental load. A delta load only moves changes between systems.
 
+The initial load happens right before the data warehouse becomes available for use. 
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/c1c8465f-1bc5-43a9-bfe4-cc763ade50ff)
 
+The frequency with which delta loads happen depends on business requirements. Depending on how fresh the data needs to be, delta loads can happen at any interval. Hourly, daily, and weekly refreshes are typical.
 
+#### Data Collection Methods
+- Application Programming Interfaces (APIs)
+- Web Services
+- Web Scraping
+- Human-In-The-Loop
+- Surveys
+- Survey Tools
+- Observation
+- Sampling
 
+### Working with Data
+Determining an appropriate database structure, identifying data sources, and loading a database takes a considerable amount of effort. To turn a database design into an operational database ready to accept data, you use the Data Definition Language (DDL) components of SQL. DDL lets you create, modify, and delete tables and other associated database objects.
 
+To generate insights, a productive analyst must be comfortable using the Data Manipulation Language (DML) capabilities of SQL to insert, modify, and retrieve information from databases. While DDL manages the structure of a database, DML manages the data in the database.
 
+#### Data Manipulation - For possible actions
+- Create New Data
+- Read Existing Data
+- Update Exisiting Data
+- Delete Existing Data
 
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/4a5c6470-af3a-4db3-8536-ba818d79fb1c)
 
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/3157607c-7c64-45b3-96a9-537cadc1e963)
 
+The keywords in SQL are case-insensitive.
 
+#### Filtering
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/e317be03-6d4e-4721-bb77-dffd8c0d95fd)
 
+#### Filtering and Logical Operators
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/da09496f-8223-4986-aa93-f492a7455396)
 
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/35ac2cca-62cb-4a97-a3c9-39618a8e1343)
+
+#### Sorting
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/b29f2b38-b438-47e5-8f71-3006ae0ac7c6)
+
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/8cc1dbae-971d-4207-9ab3-45b2a920bb25)
+
+#### Logical Functions
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/056283d8-3909-4e4d-b0e9-226131279eea)
+
+IFF is just one example of a logical function. When using logical functions, you need to balance their convenience with the knowledge that you are replacing data from the database with the function's coded values.
+
+#### Aggregate Functions
+Summarized data helps answer questions that executives have, and aggregate functions are an easy way to summarize data. Aggregate functions summarize a query's data and return a single value. 
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/00772c3e-c8a4-444e-a891-c0e023885a0c)
+
+#### System Functions
+Each database platform offers functions that expose data about the database itself. One of the most frequently used system functions returns the current date. The current date is a component of transactional records and enables time-based analysis in the future. The current date is also necessary for a system that uses an effective date approach.
+
+#### Query Optimization
+- Parametrization
+- Indexing
+- Data Subsets and Temporary Tables
+- Execution Plam
+  
 
 
 ## Chapter 4: Data Quality
