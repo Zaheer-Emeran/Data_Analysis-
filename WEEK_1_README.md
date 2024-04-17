@@ -455,14 +455,140 @@ Each database platform offers functions that expose data about the database itse
 
 
 ## Chapter 4: Data Quality
-### Subheading 1
-Content
+#Note: Figure out what the actual fluff is the difference between the adding parts in this chap
 
-### Subheading 2
-Content
+## Topics to gather info on
+- Aggregation
+- Transposition
+- Normalization
+- Min-Max Normalization
+- Parsing/String Manipulation
 
-### Subheading 3
-Content
+### Duplicate Data
+Duplicate data occurs when data representing the same transaction is accidentally duplicated within a system.
+<br> Humans are primarily responsible for creating duplicate data.  The best way to resolve duplicate data is to prevent its creation in the first place.
+<br> Having multiple data sources for the same data elements is also a source of duplicate data.
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/4b1a7c2a-cf6e-4228-8d56-cb6b7951c46f)
+To resolve duplicate data issues, the company has a duplicate resolution process. 
+
+### Redundant Data
+While duplicate data typically comes from accidental data entry, redundant data happens when the same data elements exist in multiple places within a system. Frequently, data redundancy is a function of integrating multiple systems.
+<br> When integrating multiple data sources, dealing with redundant data is a persistent challenge.
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/0939dd0a-84b9-43bc-b55d-70cafa4d00aa)
+
+There are several options for resolving redundant data. One approach synchronizes changes to shared data elements between the Accounting and Sales systems. However, technical or political realities can make synchronizing source systems unfeasible.
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/f616d135-99b1-4021-ac26-43f88008de7d)
+Another root cause of data redundancy is an inappropriate database design
+
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/0b873bf7-b079-4e44-92e3-5abb68368533)
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/ee5f119f-ce0c-40cd-95c7-2944b98f5d9b)
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/7dfc081f-e69b-4b18-92c6-892ab43fc9fb)
+The best way to resolve a data redundancy issue is by restructuring the tables.
+
+### Missing Values
+<br> Missing values / null values occur when you expect an attribute to contain data but nothing is there. 
+<br> A null value is the absence of a value. A null is not a space, blank, or other character.
+<br> There are situations when allowing nulls makes sense. Suppose you are storing data about people and have a column for Middle Initial. Since not everyone has a middle initial, the Middle Initial column should be optional. 
+
+However, if you read a CSV file using the Python or R programming language, the null value for January 4th poses a problem. Trying to calculate the average, which was successful in SQL, results in an error in Python and R as the equivalent functions in those languages do not handle null values.
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/0782c8af-6336-435f-bdf4-84eae1ef6921)
+
+### Invalid Data
+Invalid data are values outside the valid range for a given attribute. 
+
+<br> An invalid value violates a business rule instead of having an incorrect data type
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/4cff3269-d645-4f69-8c4d-5a1ee3206705)
+Text data is more complex. One thing that leads to invalid character data is an absence of referential integrity within a database.
+<br> Text data is more complex. One thing that leads to invalid character data is an absence of referential integrity within a database. I
+<br> If two tables have a relationship but no foreign keys, the conditions for invalid character data exist.
+
+### Nonparamettric Data
+Nonparametric data is data collected from categorical variables, Sometimes the categories indicate differentiation, and sometimes they have a rank order associated with them. . In this latter case, the rank order of the values is of significance, not the individual values themselves.
+
+### Data Outliers
+With outliers, you need to understand why they exist and whether they are valid in the context of your analysis. You know what outliers are Z.
+
+### Specification Mismatch
+A specification describes the target value for a component. A specification mismatch occurs when an individual component's characteristics are beyond the range of acceptable values.
+
+### Data Type Validation
+Data type validation ensures that values in a dataset have a consistent data type.
+
+## Data Manipulation Techniques
+### Recording Data
+Recoding data is a technique you can use to map original values for a variable into new values to facilitate analysis. Recoding groups data into multiple categories, creating a categorical variable.
+
+categorical variable is either nominal or ordinal. 
+- Nominal variables are any variable with two or more categories where there is no natural order of the categories, like hair color or eye color.
+- Ordinal variables are categories with an inherent rank. For example, T-shirt size is an example of an ordinal variable, as sizes come in small, medium, large, and extra-large. 
+
+
+### Derived Variables
+A derived variable is a new variable resulting from a calculation on an existing variable.However, derived variables don't have to be categorical.
+For instance, calculating age from when the person was born.
+
+### Data Merge
+A data merge uses a common variable to combine multiple datasets with different structures into a single dataset. Merging data improves data quality by adding new variables to your existing data. ETL processes commonly append data while transforming data for use in analytical environments.
+
+Consider the systems that support a university. When a person applies, the university stores data, including admissions essays, high school transcripts, letters of recommendation, and standardized test scores. Upon becoming a student, a person generates academic data, including course enrollment and grades. Some students have work-study jobs, which create payroll data, including hours worked and hourly rate.
+
+Merging tables and columns together into another table
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/631453c9-decd-4ffe-9654-720c6c83c9c3)
+
+
+### Data Blending
+Data blending combines multiple sources of data into a single dataset at the reporting layer. While data blending is conceptually similar to the extract, transform, and load process in Chapter 3, there is a crucial difference. Recall that ETL processes operate on a schedule, copying data from source systems into analytics environments. Business requirements drive the scheduling, such as near real-time, hourly, daily, weekly, monthly, or annually. Typically, an organization's IT department designs, builds, operates, and maintains ETL processes.
+
+Data blending differs from ETL in that it allows an analyst to combine datasets in an ad hoc manner without saving the blended dataset in a relational database. Instead of the blended dataset persisting over time, it exists only at the reporting layer, not in the source databases.
+
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/62f7f2f6-4ef5-445a-bd1b-ee5bcb762ca3)
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/687cc4a0-0e8d-492b-9161-a1234f542426)
+
+### Concatenation
+Concatenation is the merging of separate variables into a single variable. 
+
+Concatenation is a highly effective technique when dealing with a source system that stores components of a single variable in multiple columns. The need for concatenation frequently occurs when dealing with date and time data. 
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/ea58ec1e-bbb5-4d25-a49d-783d877c4e5d)
+
+### Data Append
+A data append combines multiple data sources with the same structure, resulting in a new dataset containing all the rows from the original datasets. 
+When appending data, you save the result as a new dataset for ongoing analysis.
+
+### Imputation
+Imputation is a technique for dealing with missing values by replacing them with substitutes. When merging multiple data sources, you may end up with a dataset with many nulls in a given column. If you are collecting sensor data, it is possible to have missing values due to collection or transmission issues.
+
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/afc36cda-0aeb-4011-8e7a-119ec1c225b7)
+
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/248276e0-24d2-4410-a3a6-62f6611031a3)
+
+![image](https://github.com/Zaheer-Emeran/Data_Analysis-/assets/162816701/bd9ce437-0929-4846-abb0-365d0cc99581)
+
+### Reduction
+When dealing with big data, it is frequently unfeasible and inefficient to manipulate the entire dataset during analysis. Reduction is the process of shrinking an extensive dataset without negatively impacting its analytical value. There are a variety of reduction techniques from which you can choose. Selecting a method depends on the type of data you have and what you are trying to analyze. Dimensionality reduction and numerosity reduction are two techniques for data reduction.
+
+### Dimensionality Reduction
+One reduction technique is dimensionality reduction, which removes attributes from a dataset. Removing attributes reduces the dataset's overall size. 
+
+### Numerosity Reduction
+Another technique is numerosity reduction, which reduces the overall volume of data.
+<br> One way to reduce the volume of quantitative data is by creating a histogram.
+![Uploading image.png…]()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Chapter 5: Data Analysis and Statics
