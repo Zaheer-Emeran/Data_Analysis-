@@ -577,8 +577,45 @@ Another technique is numerosity reduction, which reduces the overall volume of d
 
 
 
+### Managing Data Quality
+#### Circumstances for Quality Checking
+- Data Acquisition
+- Data Transformation and Conversion
+- Data Manipulation
+- Final Product Preparation
+
+### Automated Validation
+Many data sources feed analytics environments. While some of these data sources are other computer systems, others depend directly on people. Whenever people interact with systems, it's possible to introduce data-related errors. Whether source data is machine- or human-generated, one way to prevent data entry mistakes from adversely impacting data quality is to automate data validation checks.
+
+### Data Quality Dimensions
+- Data Accuracy
+- Data Completeness
+- Data Consistency
+- Data Timeliness
+- Data Uniqueness
+- Data Validity
+
+### Methods to Validate Quality
+#### Reasonable Expectations
+One approach is to determine whether or not the data in your analytics environment meets your reasonable expectations.
+It is worth spending time reflecting on what measures are reasonable for your environment. After defining how you want to measure your expectations, automate the reasonable expectation check by creating exception reports as part of your ETL processes.
 
 
+#### Data Profiling
+Another approach to improving quality is to profile your data. Data profiling uses statistical measures to check for data discrepancies, including values that are missing, that occur either infrequently or too frequently, or that should be eliminated. Profiling can also identify irregular patterns within your data.
+
+Uses statistical methods to check for discrepencies in data.
+
+
+#### Data Audits
+Another method to keep in mind is auditing your data. Data audits look at your data and help you understand whether or not you have the data you need to operate your business. Data audits use data profiling techniques and can help identify data integrity and security issues.
+
+
+#### Sampling
+Another method for validating data quality is by examining a sample of your data. Sampling is a statistical technique in which you use a subset of your data to inform conclusions about your overall data.
+
+#### Cross-Validation
+Analysts frequently use existing data to generate predictive models using a variety of statistical methods. Cross-validation is a statistical technique that evaluates how well predictive models perform. Cross-validation works by dividing data into two subsets. The first subset is the training set, and the second is the testing, or validation, set.
 
 
 
